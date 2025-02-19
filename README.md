@@ -27,13 +27,12 @@ This project focuses on analyzing user behavior data to gain actionable business
 ---
 
 ## 📥 **Data Source**
-> **🔔 Note:** Fill in the data source information once available.
 
 | **Dataset** | **Description** | **Source** |
 |-------------|-----------------|------------|
-| User Data   | User demographics, behavior, and transaction data | [Insert data source here] |
-| Product Data| Product categories and preferences                | [Insert data source here] |
-| Interaction Data | User interaction logs (page views, clicks, sessions) | [Insert data source here] |
+| User Data   | User demographics, behavior, and transaction data |
+| Product Data| Product categories and preferences                |
+| Interaction Data | User interaction logs (page views, clicks, sessions) |
 
 ---
 
