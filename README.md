@@ -1,11 +1,3 @@
-# Data-Analysis
-计划做一个分析项目：探讨学生考试成绩跟什么因素有关？对因素进行统计分析等。。。
-
-
-# 数据来源：
-https://www.kaggle.com/datasets/lainguyn123/student-performance-factors?resource=download
-
-
 # 📊 User Behavior Analysis and Path Mining Project
 
 ## 📝 **Project Overview**
@@ -141,21 +133,12 @@ pip install -r requirements.txt
 ---
 
 ## 👨‍💻 **Contributors**
-- [Your Name Here] – Data Scientist & Project Lead  
-- [Optional: Collaborators] – Data Analyst, Visualization Expert  
-
----
-
-## 📢 **License**
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Kartikey Bartwal – Data Scientist & Data Provider 
 
 ---
 
 ## 📝 **Acknowledgments**
 - Inspired by real-world user behavior analysis projects in e-commerce and content platforms.  
-- Data sourced from [Insert Data Source Here].  
-- Thanks to the open-source community for providing valuable resources and libraries.  
+- Data sourced from Kaggle: https://www.kaggle.com/datasets/kartikeybartwal/ecommerce-product-recommendation-collaborative/data.   
 
 ---
-
-🚀 **Start analyzing and unlock valuable insights into user behavior!**
