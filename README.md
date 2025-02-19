@@ -16,22 +16,22 @@ This project focuses on analyzing user behavior data to gain actionable business
 ## 📥 **Data Description & Key Indicators**
 The analysis utilizes the following data attributes to address business questions and drive insights:
 
-| **Feature** | **Description** | **Usage in Analysis** |
-|-------------|-----------------|-----------------------|
-| `User_ID` | Unique identifier for each user | Tracking and user-specific analysis |
-| `Age` | Age of the user | Demographic segmentation, age-based preference analysis |
-| `Gender` | Gender of the user | Gender-specific targeting and recommendations |
-| `Location` | Suburban, rural, or urban | Geographical segmentation and preference analysis |
-| `Income` | User's income level | Purchasing power assessment, pricing strategies |
-| `Interests` | User interests (sports, fashion, technology, etc.) | Personalized content and product recommendations |
-| `Last_Login_Days_Ago` | Days since last login | Engagement analysis and churn prediction |
-| `Purchase_Frequency` | User's purchase frequency | Shopping habit analysis and loyalty segmentation |
-| `Average_Order_Value` | Average value of orders | Promotion and pricing strategy optimization |
-| `Total_Spending` | Total spending amount | Lifetime value (LTV) analysis and segmentation |
-| `Product_Category_Preference` | Preferred product categories | Customized recommendation systems |
-| `Time_Spent_on_Site_Minutes` | Session duration on the platform | Engagement level measurement |
-| `Pages_Viewed` | Number of pages viewed per visit | Browsing behavior and interest analysis |
-| `Newsletter_Subscription` | Newsletter subscription status | Targeted marketing and engagement strategies |
+| **Feature** | **Description** |
+|-------------|-----------------|
+| `User_ID` | Unique identifier for each user |
+| `Age` | Age of the user |
+| `Gender` | Gender of the user |
+| `Location` | Suburban, rural, or urban |
+| `Income` | User's income level |
+| `Interests` | User interests (sports, fashion, technology, etc.) |
+| `Last_Login_Days_Ago` | Days since last login |
+| `Purchase_Frequency` | User's purchase frequency |
+| `Average_Order_Value` | Average value of orders |
+| `Total_Spending` | Total spending amount |
+| `Product_Category_Preference` | Preferred product categories |
+| `Time_Spent_on_Site_Minutes` | Session duration on the platform |
+| `Pages_Viewed` | Number of pages viewed per visit |
+| `Newsletter_Subscription` | Newsletter subscription status |
 
 ---
 
@@ -39,7 +39,7 @@ The analysis utilizes the following data attributes to address business question
 ```
 📦 user_behavior_analysis
 ├── 📁 data                # Data files (raw, cleaned, processed)
-│   ├── raw_data.csv       # Raw user behavior data (to be filled by user)
+│   ├── user_personalized_features.csv       # Raw user behavior data
 │   ├── cleaned_data.csv   # Processed and cleaned data
 ├── 📁 notebooks           # Jupyter Notebooks for step-by-step analysis
 │   ├── eda.ipynb          # Exploratory Data Analysis
