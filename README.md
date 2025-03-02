@@ -1,15 +1,15 @@
-# 📊 User Behavior Analysis and Path Mining Project
+# User Behavior Analysis and Path Mining Project
 
-## 📝 **Project Overview**
-This project focuses on analyzing user behavior data to gain actionable business insights, improve customer segmentation, predict user churn, and recommend personalized products. By leveraging various data mining techniques, the project aims to enhance user engagement, increase conversion rates, and optimize marketing strategies.
+## **Project Overview**
+This project focuses on analysing user behaviour data to gain actionable business insights, improve customer segmentation and predict customer churn. Using a range of data mining and statistical techniques, the project aims to increase customer engagement, improve conversion rates and optimise marketing strategies.
 
-## 🎯 **Objectives**
-- Develop comprehensive **user profiles** using demographic and behavioral data.
-- Perform **user segmentation** via clustering to identify key customer groups.
-- Predict **user churn** to proactively retain valuable customers.
-- Design an **item recommendation system** tailored to user preferences.
-- Visualize **user behavior paths** to identify key drop-off points in the user journey.
-- Provide **data-driven business insights** to inform marketing and product strategies.
+## **Objectives**
+- Use demographic, behavioural and transactional data to build a comprehensive **customer profile**.
+- Perform **exploratory data analysis (EDA)** to identify key indicators and discover hidden data patterns.
+- Visualise **customer behaviour paths** to identify churn points and improve the overall user experience.
+- Perform **customer segmentation** through cluster analysis to identify different customer groups and tailor marketing strategies.
+- Predict **customer churn** using supervised learning models to develop corresponding retention strategies.
+- Provide **data-driven business insights** to support marketing and product development decisions.
 
 ---
 
@@ -35,71 +35,60 @@ The analysis utilizes the following data attributes to address business question
 
 ---
 
-## 🗂️ **Project Structure**
+## **Project Structure**
 ```
-📦 user_behavior_analysis
-├── 📁 data                # Data files (raw, cleaned, processed)
+User_Behavior_Analysis
+├── 📁 Data                                  # Data files (raw, cleaned, processed)
 │   ├── user_personalized_features.csv       # Raw user behavior data
-│   ├── cleaned_data.csv   # Processed and cleaned data
-├── 📁 notebooks           # Jupyter Notebooks for step-by-step analysis
-│   ├── eda.ipynb          # Exploratory Data Analysis
-│   ├── segmentation.ipynb # User segmentation and clustering
-│   ├── churn_model.ipynb  # Churn prediction modeling
-│   ├── recommendation.ipynb # Personalized recommendation system
-├── 📁 scripts             # Python scripts for data processing and modeling
-├── 📁 visuals             # Visualization outputs (charts, diagrams)
-├── 📄 requirements.txt    # Project dependencies
-├── 📄 README.md           # Project documentation
-└── 📄 report.pdf          # Final project report with insights and recommendations
+│   ├── cleaned_data.csv                     # Processed and cleaned data
+├── 📁 Notebooks                             # Jupyter Notebooks for step-by-step analysis
+│   ├── EDA.ipynb                            # Exploratory Data Analysis
+│   ├── Cluster Analysis.ipynb                   # User segmentation and clustering
+│   ├── Chure Prediction Model.ipynb         # Churn prediction modeling
+├── 📁 Plots                                # Visualization outputs (Charts, Diagrams)
+├── 📄 README.md                              # Project documentation
+└── 📄 Report.pdf                             # Final project report with insights and recommendations
 ```
 
 ---
 
-## 🛠️ **Technologies & Libraries**
-- **Programming Language:** Python 3.x  
+## **Technologies & Libraries**
+- **Programming Language:** Python 3.10.14 
 - **Data Manipulation:** Pandas, NumPy  
-- **Machine Learning:** Scikit-Learn, XGBoost, LightGBM  
-- **Visualization:** Matplotlib, Seaborn, Plotly  
-- **Clustering Algorithms:** K-Means, Hierarchical Clustering  
-- **Recommendation System:** Content-based filtering  
-- **Model Interpretation:** SHAP, LIME  
-- **Visualization Tools:** Power BI, Tableau *(optional for dashboards)*
+- **Machine Learning:** Scikit-Learn, XGBoost 
+- **Visualization:** Matplotlib, Seaborn, plotly
+- **Clustering Algorithms:** K-Means
+- **Visualization Tools:** Power BI, Tableau
 
 ---
 
-## 📊 **Methodology & Steps**
+## **Methodology & Steps**
 
-### 🚀 **1. Exploratory Data Analysis (EDA)**
-- Analyze demographic data (Age, Gender, Location, Income)
-- Explore user engagement metrics (Last_Login_Days_Ago, Time_Spent_on_Site_Minutes, Pages_Viewed)
-- Examine purchasing patterns (Purchase_Frequency, Average_Order_Value, Total_Spending)
-- Visualize product and category preferences with respect to user interests
+### **1. Data Preprocessing
+- Handle missing values and outliers (if any)
 
-### 🧹 **2. Data Preprocessing & Feature Engineering**
-- Handle missing values and outliers
+### **2. Exploratory Data Analysis (EDA)**
+- Analyse demographic characteristics (age, gender, income, location) and behavioural indicators (log-in frequency, purchase frequency, website browsing, etc.).
+- Determine correlations between characteristics and detected outliers, so as to prepare for feature engineering.
+- Visualise key indicators to understand user distribution and behaviour trends.
+
+### **3. Feature Engineering**
 - Encode categorical variables (Gender, Location, Interests, Product_Category_Preference)
 - Scale numerical features (Income, Total_Spending, Average_Order_Value)
 - Create new features:
   - **Activity Score:** Based on login frequency and session duration
-  - **Engagement Ratio:** Pages viewed per minute on the platform
-  - **Spending Capacity:** Ratio of Total_Spending to Income
 
-### 🧭 **3. User Segmentation (Clustering)**
+### **4. User Segmentation (Clustering)**
 - Apply **K-Means** and **Hierarchical Clustering** using features like Purchase_Frequency, Average_Order_Value, and Engagement Ratio
 - Interpret clusters and develop **user personas** such as "High-Value Customers", "Potential Buyers", and "Infrequent Users"
 - Visualize clusters with scatter plots and radar charts
 
-### 🔍 **4. Churn Prediction Modeling**
+### **5. Churn Prediction Modeling**
 - Define churn label based on `Last_Login_Days_Ago` and `Purchase_Frequency`
-- Train machine learning models (Random Forest, XGBoost) to predict churn probability
+- Train different machine learning models (Random Forest, XGBoost) to predict churn probability
 - Analyze feature importance and interpret results with **SHAP values**
 
-### 📦 **5. Personalized Recommendation System**
-- Use `Product_Category_Preference` and `Interests` for content-based product recommendations
-- Develop a ranking system to recommend top categories/products for each user segment
-- Evaluate recommendation relevance through engagement metrics
-
-### 📢 **6. Business Insights & Visualization**
+### **6. Business Insights & Visualization**
 - Create **Sankey diagrams** to analyze user behavior paths from browsing to purchase
 - Develop **conversion funnel visualizations** highlighting key drop-off points
 - Use **dashboard tools** (Power BI/Tableau) to present insights interactively
